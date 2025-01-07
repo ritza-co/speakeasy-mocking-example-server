@@ -22,7 +22,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Next, clone the repository:
 
 ```bash
-git clone 
+git clone https://github.com/ritza-co/speakeasy-mocking-example-server.git
 
 cd fastapi-mock-server
 ```
