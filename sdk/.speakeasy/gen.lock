@@ -1,0 +1,207 @@
+lockVersion: 2.0.0
+id: e23a827c-49de-42fd-95ff-f35cb9b84aaa
+management:
+  docChecksum: cdfea59f79f382fdb7fd513e514806df
+  docVersion: 1.1.0
+  speakeasyVersion: 1.464.0
+  generationVersion: 2.486.6
+  releaseVersion: 0.1.0
+  configChecksum: 5d42d0bbc4e5d28d02764741cbeb1367
+features:
+  python:
+    additionalDependencies: 1.0.0
+    constsAndDefaults: 1.0.5
+    core: 5.7.5
+    defaultEnabledRetries: 0.2.0
+    devContainers: 3.0.0
+    envVarSecurityUsage: 0.3.2
+    flatRequests: 1.0.1
+    flattening: 3.1.0
+    globalSecurityCallbacks: 1.0.0
+    globalServerURLs: 3.1.0
+    methodArguments: 1.0.2
+    mockServer: 0.1.0
+    responseFormat: 1.0.1
+    retries: 3.0.2
+    sdkHooks: 1.0.0
+    tests: 1.11.1
+    unions: 3.0.4
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .python-version
+  - .vscode/settings.json
+  - CONTRIBUTING.md
+  - USAGE.md
+  - docs/models/deletedestinationdestinationsdestinationiddeleterequest.md
+  - docs/models/destination.md
+  - docs/models/getdestinationbyiddestinationsdestinationidgetrequest.md
+  - docs/models/getdestinationsdestinationsgetrequest.md
+  - docs/models/httpvalidationerror.md
+  - docs/models/loc.md
+  - docs/models/updatedestinationdestinationsdestinationidputrequest.md
+  - docs/models/utils/retryconfig.md
+  - docs/models/validationerror.md
+  - docs/sdks/destinations/README.md
+  - docs/sdks/general/README.md
+  - docs/sdks/holidaydestinations/README.md
+  - poetry.toml
+  - py.typed
+  - pylintrc
+  - pyproject.toml
+  - scripts/prepare-readme.py
+  - scripts/publish.sh
+  - src/holiday_destinations/__init__.py
+  - src/holiday_destinations/_hooks/__init__.py
+  - src/holiday_destinations/_hooks/sdkhooks.py
+  - src/holiday_destinations/_hooks/types.py
+  - src/holiday_destinations/_version.py
+  - src/holiday_destinations/basesdk.py
+  - src/holiday_destinations/destinations.py
+  - src/holiday_destinations/general.py
+  - src/holiday_destinations/httpclient.py
+  - src/holiday_destinations/models/__init__.py
+  - src/holiday_destinations/models/apierror.py
+  - src/holiday_destinations/models/delete_destination_destinations_destination_id_deleteop.py
+  - src/holiday_destinations/models/destination.py
+  - src/holiday_destinations/models/get_destination_by_id_destinations_destination_id_getop.py
+  - src/holiday_destinations/models/get_destinations_destinations_getop.py
+  - src/holiday_destinations/models/httpvalidationerror.py
+  - src/holiday_destinations/models/update_destination_destinations_destination_id_putop.py
+  - src/holiday_destinations/models/validationerror.py
+  - src/holiday_destinations/py.typed
+  - src/holiday_destinations/sdk.py
+  - src/holiday_destinations/sdkconfiguration.py
+  - src/holiday_destinations/types/__init__.py
+  - src/holiday_destinations/types/basemodel.py
+  - src/holiday_destinations/utils/__init__.py
+  - src/holiday_destinations/utils/annotations.py
+  - src/holiday_destinations/utils/enums.py
+  - src/holiday_destinations/utils/eventstreaming.py
+  - src/holiday_destinations/utils/forms.py
+  - src/holiday_destinations/utils/headers.py
+  - src/holiday_destinations/utils/logger.py
+  - src/holiday_destinations/utils/metadata.py
+  - src/holiday_destinations/utils/queryparams.py
+  - src/holiday_destinations/utils/requestbodies.py
+  - src/holiday_destinations/utils/retries.py
+  - src/holiday_destinations/utils/security.py
+  - src/holiday_destinations/utils/serializers.py
+  - src/holiday_destinations/utils/url.py
+  - src/holiday_destinations/utils/values.py
+  - tests/__init__.py
+  - tests/test_client.py
+  - tests/test_destinations.py
+  - tests/test_general.py
+  - tests\mockserver\Dockerfile
+  - tests\mockserver\Makefile
+  - tests\mockserver\README.md
+  - tests\mockserver\go.mod
+  - tests\mockserver\go.sum
+  - tests\mockserver\internal\handler\assert\contenttype.go
+  - tests\mockserver\internal\handler\assert\header.go
+  - tests\mockserver\internal\handler\assert\parameter.go
+  - tests\mockserver\internal\handler\assert\pointer.go
+  - tests\mockserver\internal\handler\assert\security.go
+  - tests\mockserver\internal\handler\doc.go
+  - tests\mockserver\internal\handler\generated_handler.go
+  - tests\mockserver\internal\handler\generated_handlers.go
+  - tests\mockserver\internal\handler\pathdeletedestinationsdestinationid.go
+  - tests\mockserver\internal\handler\pathget.go
+  - tests\mockserver\internal\handler\pathgetdestinations.go
+  - tests\mockserver\internal\handler\pathgetdestinationsdestinationid.go
+  - tests\mockserver\internal\handler\pathpostdestinations.go
+  - tests\mockserver\internal\handler\pathputdestinationsdestinationid.go
+  - tests\mockserver\internal\handler\values\files.go
+  - tests\mockserver\internal\logging\doc.go
+  - tests\mockserver\internal\logging\formats.go
+  - tests\mockserver\internal\logging\http_file.go
+  - tests\mockserver\internal\logging\http_logger.go
+  - tests\mockserver\internal\logging\levels.go
+  - tests\mockserver\internal\logging\logger.go
+  - tests\mockserver\internal\logging\oas_operation.go
+  - tests\mockserver\internal\logging\oas_operation_call.go
+  - tests\mockserver\internal\sdk\models\components\destination.go
+  - tests\mockserver\internal\sdk\models\components\httpmetadata.go
+  - tests\mockserver\internal\sdk\models\components\validationerror.go
+  - tests\mockserver\internal\sdk\models\operations\createdestinationdestinationspost.go
+  - tests\mockserver\internal\sdk\models\operations\deletedestinationdestinationsdestinationiddelete.go
+  - tests\mockserver\internal\sdk\models\operations\getdestinationbyiddestinationsdestinationidget.go
+  - tests\mockserver\internal\sdk\models\operations\getdestinationsdestinationsget.go
+  - tests\mockserver\internal\sdk\models\operations\readrootget.go
+  - tests\mockserver\internal\sdk\models\operations\updatedestinationdestinationsdestinationidput.go
+  - tests\mockserver\internal\sdk\models\sdkerrors\httpvalidationerror.go
+  - tests\mockserver\internal\sdk\types\bigint.go
+  - tests\mockserver\internal\sdk\types\date.go
+  - tests\mockserver\internal\sdk\types\datetime.go
+  - tests\mockserver\internal\sdk\types\decimal.go
+  - tests\mockserver\internal\sdk\types\pointers.go
+  - tests\mockserver\internal\sdk\utils\json.go
+  - tests\mockserver\internal\sdk\utils\reflect.go
+  - tests\mockserver\internal\sdk\utils\sort.go
+  - tests\mockserver\internal\server\doc.go
+  - tests\mockserver\internal\server\generated_handlers.go
+  - tests\mockserver\internal\server\internal_handlers.go
+  - tests\mockserver\internal\server\server.go
+  - tests\mockserver\internal\server\server_option.go
+  - tests\mockserver\internal\server\templates\log\index.html.tmpl
+  - tests\mockserver\internal\server\templates\log\operation.html.tmpl
+  - tests\mockserver\internal\server\templates\log\style.css.tmpl
+  - tests\mockserver\internal\tracking\requesttracker.go
+  - tests\mockserver\main.go
+examples:
+  read_root__get:
+    speakeasy-default-read-root-get:
+      responses:
+        "200":
+          application/json: "<value>"
+  get_destinations_destinations_get:
+    speakeasy-default-get-destinations-destinations-get:
+      responses:
+        "200":
+          application/json: [{"country": "Indonesia", "description": "Beautiful beaches and vibrant culture.", "name": "Bali", "rating": 4.8}, {"country": "Indonesia", "description": "Beautiful beaches and vibrant culture.", "name": "Bali", "rating": 4.8}]
+        "422":
+          application/json: {}
+  create_destination_destinations_post:
+    speakeasy-default-create-destination-destinations-post:
+      requestBody:
+        application/json: {"country": "Indonesia", "description": "Beautiful beaches and vibrant culture.", "name": "Bali", "rating": 4.8}
+      responses:
+        "201":
+          application/json: {"country": "Indonesia", "description": "Beautiful beaches and vibrant culture.", "name": "Bali", "rating": 4.8}
+        "422":
+          application/json: {}
+  delete_destination_destinations__destination_id__delete:
+    "":
+      parameters:
+        path:
+          destination_id: 0
+  get_destination_by_id_destinations__destination_id__get:
+    "":
+      parameters:
+        path:
+          destination_id: 0
+      responses:
+        "200":
+          application/json: {"country": "Indonesia", "description": "Beautiful beaches and vibrant culture.", "name": "Bali", "rating": 4.8}
+        "422": {}
+  update_destination_destinations__destination_id__put:
+    "":
+      parameters:
+        path:
+          destination_id: 1
+      requestBody:
+        application/json: {"country": "Indonesia", "description": "Beautiful beaches and vibrant culture.", "name": "Bali", "rating": 4.8}
+      responses:
+        "200":
+          application/json: {"country": "Indonesia", "description": "Beautiful beaches and vibrant culture.", "name": "Bali", "rating": 4.8}
+        "422": {}
+generatedTests:
+  read_root__get: "2025-01-07T19:36:09+02:00"
+  get_destinations_destinations_get: "2025-01-07T19:36:09+02:00"
+  create_destination_destinations_post: "2025-01-07T19:36:09+02:00"
+  delete_destination_destinations__destination_id__delete: "2025-01-07T19:36:09+02:00"
+  get_destination_by_id_destinations__destination_id__get: "2025-01-07T19:36:09+02:00"
+  update_destination_destinations__destination_id__put: "2025-01-07T19:36:09+02:00"

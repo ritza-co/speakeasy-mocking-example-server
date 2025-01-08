@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Holiday Destinations API:
+        inputs:
+            - location: ..\openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api
+targets:
+    holiday-destinations:
+        target: python
+        source: Holiday Destinations API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-python-code-samples
+            labelOverride:
+                fixedValue: Python (SDK)
+            blocking: false

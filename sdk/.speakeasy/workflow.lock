@@ -1,0 +1,36 @@
+speakeasyVersion: 1.464.0
+sources:
+    Holiday Destinations API:
+        sourceNamespace: holiday-destinations-api
+        sourceRevisionDigest: sha256:61d5e777641246f6d387752f5d561aa8744367e0d440ccd0f4054bb2be6e7072
+        sourceBlobDigest: sha256:b085690b903ff7d385556ccc82d4a70413cf7735bc0f6d5386178cdf78dd5e9e
+        tags:
+            - latest
+            - 1.1.0
+targets:
+    holiday-destinations:
+        source: Holiday Destinations API
+        sourceNamespace: holiday-destinations-api
+        sourceRevisionDigest: sha256:61d5e777641246f6d387752f5d561aa8744367e0d440ccd0f4054bb2be6e7072
+        sourceBlobDigest: sha256:b085690b903ff7d385556ccc82d4a70413cf7735bc0f6d5386178cdf78dd5e9e
+        codeSamplesNamespace: holiday-destinations-api-python-code-samples
+        codeSamplesRevisionDigest: sha256:fa751428020a7c175dde909eb9519394ecd646e7716bd27f9a58dccaa3ee8d17
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Holiday Destinations API:
+            inputs:
+                - location: ..\openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api
+    targets:
+        holiday-destinations:
+            target: python
+            source: Holiday Destinations API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-python-code-samples
+                labelOverride:
+                    fixedValue: Python (SDK)
+                blocking: false

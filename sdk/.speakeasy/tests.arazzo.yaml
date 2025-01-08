@@ -1,0 +1,131 @@
+arazzo: 1.0.0
+info:
+  title: Test Suite
+  summary: Created from ..\openapi.yaml
+  version: 0.0.1
+sourceDescriptions:
+  - name: ..\openapi.yaml
+    url: https://TBD.com
+    type: openapi
+workflows:
+  - workflowId: read_root__get
+    steps:
+      - stepId: test
+        operationId: read_root__get
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              "\u003cvalue\u003e"
+            type: simple
+    x-speakeasy-test-group: General
+  - workflowId: get_destinations_destinations_get
+    steps:
+      - stepId: test
+        operationId: get_destinations_destinations_get
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              [
+                {
+                  "country": "Indonesia",
+                  "description": "Beautiful beaches and vibrant culture.",
+                  "name": "Bali",
+                  "rating": 4.8
+                },
+                {
+                  "country": "Indonesia",
+                  "description": "Beautiful beaches and vibrant culture.",
+                  "name": "Bali",
+                  "rating": 4.8
+                }
+              ]
+            type: simple
+    x-speakeasy-test-group: Destinations
+  - workflowId: create_destination_destinations_post
+    steps:
+      - stepId: test
+        operationId: create_destination_destinations_post
+        requestBody:
+          contentType: application/json
+          payload:
+            country: Indonesia
+            description: Beautiful beaches and vibrant culture.
+            name: Bali
+            rating: 4.8
+        successCriteria:
+          - condition: $statusCode == 201
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "country": "Indonesia",
+                "description": "Beautiful beaches and vibrant culture.",
+                "name": "Bali",
+                "rating": 4.8
+              }
+            type: simple
+    x-speakeasy-test-group: Destinations
+  - workflowId: delete_destination_destinations__destination_id__delete
+    steps:
+      - stepId: test
+        operationId: delete_destination_destinations__destination_id__delete
+        parameters:
+          - name: destination_id
+            in: path
+            value: 0
+        successCriteria:
+          - condition: $statusCode == 204
+    x-speakeasy-test-group: Destinations
+  - workflowId: get_destination_by_id_destinations__destination_id__get
+    steps:
+      - stepId: test
+        operationId: get_destination_by_id_destinations__destination_id__get
+        parameters:
+          - name: destination_id
+            in: path
+            value: 0
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "country": "Indonesia",
+                "description": "Beautiful beaches and vibrant culture.",
+                "name": "Bali",
+                "rating": 4.8
+              }
+            type: simple
+    x-speakeasy-test-group: Destinations
+  - workflowId: update_destination_destinations__destination_id__put
+    steps:
+      - stepId: test
+        operationId: update_destination_destinations__destination_id__put
+        parameters:
+          - name: destination_id
+            in: path
+            value: 1
+        requestBody:
+          contentType: application/json
+          payload:
+            country: Indonesia
+            description: Beautiful beaches and vibrant culture.
+            name: Bali
+            rating: 4.8
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "country": "Indonesia",
+                "description": "Beautiful beaches and vibrant culture.",
+                "name": "Bali",
+                "rating": 4.8
+              }
+            type: simple
+    x-speakeasy-test-group: Destinations
