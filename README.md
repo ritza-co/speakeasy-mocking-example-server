@@ -13,7 +13,7 @@ This project provides an example server built with FastAPI for demonstrating SDK
 
 ## Installation
 
-First, ensure you have uv installed. If you don't have it, install it with:
+First, ensure you have [uv](https://github.com/astral-sh/uv) installed. If you don't have it, install it with:
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
