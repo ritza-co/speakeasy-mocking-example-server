@@ -24,7 +24,7 @@ Next, clone the repository:
 ```bash
 git clone https://github.com/ritza-co/speakeasy-mocking-example-server.git
 
-cd fastapi-mock-server
+cd speakeasy-mocking-example-server
 ```
 
 ## Usage
