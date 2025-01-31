@@ -57,7 +57,7 @@ def create_destination(destination: Destination) -> Destination:
 
 @app.get("/destinations/{destination_id}", response_model=Destination, tags=["Destinations"])
 def get_destination_by_id(
-    destination_id: int = Path(..., description="The ID of the destination to retrieve.", example=0)
+    destination_id: int = Path(..., description="The ID of the destination to retrieve.", examples=0)
 ) -> Destination:
     """
     Retrieve details of a specific holiday destination by its ID.
@@ -69,7 +69,7 @@ def get_destination_by_id(
 
 @app.put("/destinations/{destination_id}", response_model=Destination, tags=["Destinations"])
 def update_destination(
-    destination_id: int = Path(..., description="The ID of the destination to update.", example=1),
+    destination_id: int = Path(..., description="The ID of the destination to update.", examples=1),
     updated_destination: Destination = ...
 ) -> Destination:
     """
@@ -84,7 +84,7 @@ def update_destination(
 
 @app.delete("/destinations/{destination_id}", status_code=204, tags=["Destinations"])
 def delete_destination(
-    destination_id: int = Path(..., description="The ID of the destination to delete.", example=0)
+    destination_id: int = Path(..., description="The ID of the destination to delete.", examples=0)
 ):
     """
     Remove a holiday destination from the database by its ID.
